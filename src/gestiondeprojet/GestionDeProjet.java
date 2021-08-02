@@ -15,21 +15,23 @@ import javafx.stage.Stage;
  *
  * @author User PC
  */
+///com/graphic/activite/activite.fxml
+// "/com/graphic/dev/dev.fxml"
+///com/graphic/auth/Authentification.fxml
+///com/graphic/groupe/groupe.fxml
 public class GestionDeProjet extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/graphic/Authentification.fxml"));
-        
+        Parent root = FXMLLoader.load(getClass().getResource("/com/graphic/groupe/groupe.fxml"));
+     
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
         stage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
         launch(args);
     }

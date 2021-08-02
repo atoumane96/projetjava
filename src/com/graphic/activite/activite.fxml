@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="1205.0" style="-fx-background-color: #010b36;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.graphic.activite.ActiviteController">
+   <children>
+      <Pane prefHeight="564.0" prefWidth="382.0" style="-fx-background-color: #071e68;">
+         <children>
+            <QuadCurve controlX="-200.4000244140625" controlY="564.7999877929688" endX="221.99996948242188" endY="-112.0" layoutX="150.0" layoutY="112.0" startX="-150.00001525878906" startY="-112.0" stroke="#071e68" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1f95ff" />
+                        <Stop color="#fc000071" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </QuadCurve>
+            <DatePicker fx:id="dateDebut" layoutX="30.0" layoutY="157.0" prefHeight="25.0" prefWidth="296.0" styleClass="lesdate" stylesheets="@activiteStyle.css" />
+            <DatePicker fx:id="dateFin" layoutX="30.0" layoutY="264.0" prefHeight="25.0" prefWidth="296.0" styleClass="lesdate" stylesheets="@activiteStyle.css" />
+            <Label layoutX="31.0" layoutY="132.0" text="Date de début" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="235.0" text="Date de fin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="349.0" text="Type d'activité" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Text layoutX="83.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOUVELLE ACTIVITE" wrappingWidth="224.53677368164062">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <fill>
+                  <RadialGradient centerX="0.9266666412353516" centerY="0.3854961468063238" radius="0.5">
+                     <stops>
+                        <Stop color="#1f95ff" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <JFXButton id="BtnConnect" fx:id="BtnConnexion" buttonType="RAISED" layoutX="59.0" layoutY="456.0" onAction="#addActivity" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #64e245; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text=".">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="BtnConnect" fx:id="BtnConnexion1" buttonType="RAISED" layoutX="156.0" layoutY="456.0" onAction="#editActivity" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: orange; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text="." textFill="WHITE">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="BtnConnect" fx:id="BtnConnexion11" buttonType="RAISED" layoutX="248.0" layoutY="456.0" onAction="#deleteActivity" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: red; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text="." textFill="WHITE">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="84.0" layoutY="457.0">
+               <image>
+                  <Image url="@../../../images/add_circle_outline@1.5x.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="185.0" layoutY="459.0">
+               <image>
+                  <Image url="@../../../images/pen@1.5x.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="275.0" layoutY="459.0">
+               <image>
+                  <Image url="@../../../images/restore_from_trash.png" />
+               </image>
+            </ImageView>
+            <JFXCheckBox fx:id="type1" layoutX="38.0" layoutY="382.0" prefHeight="18.0" prefWidth="90.0" text="Primaire" textFill="#fffafa" unCheckedColor="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="type2" layoutX="142.0" layoutY="382.0" prefHeight="18.0" prefWidth="90.0" text="Secondaire" textFill="#fffafa" unCheckedColor="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="type3" layoutX="266.0" layoutY="382.0" prefHeight="18.0" prefWidth="90.0" text="Supérieur" textFill="#fffafa" unCheckedColor="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXCheckBox>
+         </children>
+      </Pane>
+      <TableView fx:id="tableActivite" layoutX="383.0" layoutY="134.0" prefHeight="430.0" prefWidth="823.0" styleClass="tree-table-view" stylesheets="@../home/home.css">
+         <columns>
+            <TableColumn fx:id="colNumero" prefWidth="124.79998779296875" text="Numéro" />
+            <TableColumn fx:id="colType" prefWidth="219.19992065429688" text="Type" />
+            <TableColumn fx:id="colDateDebut" prefWidth="251.2000732421875" text="Date début" />
+            <TableColumn fx:id="colDateFin" prefWidth="229.59991455078125" text="Date Fin" />
+         </columns>
+      </TableView>
+      <Text layoutX="641.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LISTE DES ACTIVITES" wrappingWidth="418.9367370605469">
+         <font>
+            <Font size="39.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <fill>
+            <RadialGradient centerX="0.9266666412353516" centerY="0.3854961468063238" radius="0.5">
+               <stops>
+                  <Stop color="#1f95ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="72.0" fitWidth="90.0" layoutX="543.0" layoutY="38.0">
+         <image>
+            <Image url="@../../../images/curveddisplayapps.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="1155.0" layoutY="14.0" onAction="#retourHome" prefHeight="26.0" prefWidth="36.0" style="-fx-background-color: #73e933;" text="." />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1164.0" layoutY="16.0">
+         <image>
+            <Image url="@../../../images/home-3.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

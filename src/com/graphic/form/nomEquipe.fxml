@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="343.0" style="-fx-background-color: #01115e;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.graphic.form.NomEquipeController">
+    <stylesheets>
+        <URL value="@nomequipe.css" />
+    </stylesheets>
+   <children>
+      <Ellipse layoutX="56.0" layoutY="194.0" radiusX="172.0" radiusY="208.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#72a0cf" />
+                  <Stop color="#471fc7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Ellipse>
+      <JFXTextField fx:id="txtNomEquipe" layoutX="25.0" layoutY="215.0" prefHeight="26.0" prefWidth="275.0" unFocusColor="WHITE" />
+      <Text layoutX="76.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOM DE L'EQUIPE" wrappingWidth="191.73678588867188">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <fill>
+            <RadialGradient centerX="0.9266666412353516" centerY="0.3854961468063238" radius="0.5">
+               <stops>
+                  <Stop color="#1f95ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <JFXButton id="BtnConnect" fx:id="btnValider" buttonType="RAISED" layoutX="122.0" layoutY="289.0" onAction="#addEquipe" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #64e245; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text="Valider" textFill="#130303">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="31.0">
+               <image>
+                  <Image url="@../../../images/check-all@1.5x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="118.0" fitWidth="134.0" layoutX="96.0">
+         <image>
+            <Image url="@../../../images/vector.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

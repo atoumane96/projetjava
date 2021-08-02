@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="628.0" prefWidth="1581.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.graphic.groupe.GroupeController">
+    <stylesheets>
+        <URL value="@groupe.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.30871947044053866" layoutX="-7.0" prefHeight="628.0" prefWidth="1859.0">
+         <items>
+            <Pane prefHeight="626.0" prefWidth="929.0" style="-fx-background-color: #4f0242;">
+               <children>
+                  <Polygon layoutX="74.0" layoutY="184.0" points="-73.99999237060547, 340.0, 588.4000244140625, 442.4000244140625, 34.79998779296875, -184.0" stroke="#531261" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.6488549891318984" startY="0.1793893420969257">
+                           <stops>
+                              <Stop color="#3e073d" />
+                              <Stop color="#6f3030" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Polygon>
+                  <Ellipse fx:id="btnAnnuler" layoutX="459.0" layoutY="288.0" radiusX="305.0" radiusY="342.0" stroke="#8c3636" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#410c31" />
+                              <Stop color="#6c4f66" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Ellipse>
+                  <TableView id="tree-table-view" fx:id="tabDeveloppeur" layoutX="7.0" layoutY="129.0" prefHeight="361.0" prefWidth="621.0" style="-fx-opacity: 0.6; -fx-background-color: white;">
+                     <columns>
+                        <TableColumn fx:id="numeroDev" prefWidth="102.40002137422562" styleClass="column-header" text="Numéro" />
+                        <TableColumn fx:id="nomDev" prefWidth="90.39999389648438" text="Nom" />
+                        <TableColumn fx:id="prenomDev" prefWidth="118.40005493164062" text="Prenom" />
+                        <TableColumn fx:id="telephoneDev" prefWidth="118.4000244140625" text="Téléphone" />
+                        <TableColumn fx:id="adresseDev" prefWidth="95.20001220703125" text="Adresse" />
+                        <TableColumn fx:id="specialiteDev" prefWidth="115.20001220703125" text="Spécialité" />
+                     </columns>
+                  </TableView>
+                  <JFXButton id="BtnConnect" fx:id="btnSelect" buttonType="RAISED" layoutX="16.0" layoutY="544.0" onAction="#loadSelectDev" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #64e245; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text="Selectionner">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0">
+                           <image>
+                              <Image url="@../../../images/check-all@1.5x.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id="BtnConnect" fx:id="BtnConnexion11" buttonType="RAISED" layoutX="134.0" layoutY="544.0" onAction="#actualiser" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: red; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text="Annuler" textFill="WHITE">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="27.0">
+                           <image>
+                              <Image url="@../../../images/dangerous@1.5x.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="tabEquipeSelect" prefHeight="626.0" prefWidth="1322.0" style="-fx-background-color: #022b3b;">
+               <children>
+                  <Ellipse fx:id="listeGroupePane" layoutX="238.0" layoutY="301.0" radiusX="288.0" radiusY="327.0" stroke="#0e1744" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#071f2c" />
+                              <Stop color="#6c4f66" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Ellipse>
+                  <Ellipse layoutX="531.0" layoutY="317.0" radiusX="331.0" radiusY="319.0" stroke="#154761" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#0d2369" />
+                              <Stop color="#6c4f66" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Ellipse>
+                  <JFXButton layoutX="1198.0" layoutY="14.0" onAction="#retourHome" prefHeight="26.0" prefWidth="36.0" style="-fx-background-color: #73e933;" text="." />
+                  <SplitPane dividerPositions="0.5" layoutX="-1.0" layoutY="125.0" prefHeight="501.0" prefWidth="784.0" style="-fx-opacity: 0.7;">
+                     <items>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tabDevSelect" layoutX="4.0" prefHeight="222.0" prefWidth="388.0">
+                                <columns>
+                                    <TableColumn fx:id="colNumeroDevSelect" prefWidth="75.0" text="Numéro" />
+                                  <TableColumn fx:id="colNomDevSelect" prefWidth="75.0" text="Nom" />
+                                  <TableColumn fx:id="colPrenomDevSelect" prefWidth="111.20002746582031" text="Prenom" />
+                                    <TableColumn fx:id="colSpecialiteDevSelect" prefWidth="121.5999755859375" text="Specialité" />
+                                </columns>
+                              </TableView>
+                              <JFXButton id="BtnConnect" fx:id="btnValiderGroupeDev" buttonType="RAISED" layoutX="4.0" layoutY="250.0" onAction="#createEquipe" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: green; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text="Valider" textFill="#faf5f5">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0">
+                                       <image>
+                                          <Image url="@../../../images/download-file@1.5x.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton id="BtnConnect" fx:id="btnAnnulerCreationGroup" buttonType="RAISED" layoutX="95.0" layoutY="250.0" onAction="#flushTabDevSelected" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: orange; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text="Annuler" textFill="WHITE">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="27.0">
+                                       <image>
+                                          <Image url="@../../../images/dangerous@1.5x.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tabEquipe" prefHeight="347.0" prefWidth="388.0">
+                                <columns>
+                                  <TableColumn fx:id="colNumeroTabEquipe" prefWidth="75.0" text="Numéro" />
+                                  <TableColumn fx:id="colNomTabEquipe" prefWidth="174.40005493164062" text="Nom" />
+                                    <TableColumn fx:id="colDateCreaTabEquipe" prefWidth="137.59996032714844" text="Date Création" />
+                                </columns>
+                              </TableView>
+                              <JFXButton id="BtnConnect" fx:id="btnEditGroupe" buttonType="RAISED" layoutX="6.0" layoutY="383.0" onAction="#detailsGroupe" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: orange; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text="Voir" textFill="WHITE">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="31.0">
+                                       <image>
+                                          <Image url="@../../../images/remove_red_eye@1.5x.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton id="BtnConnect" fx:id="btnDeleteGroup" buttonType="RAISED" layoutX="104.0" layoutY="384.0" onAction="#deleteEquipe" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: red; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text="Supprimer" textFill="WHITE">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView>
+                                       <image>
+                                          <Image url="@../../../images/restore_from_trash.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton id="BtnConnect" fx:id="btnActualiser" buttonType="RAISED" layoutX="208.0" layoutY="384.0" onAction="#actualiser" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: black; -fx-background-radius: 40px;" styleClass="btn btn-success" stylesheets="@../auth/authentification.css" text="Actualiser" textFill="WHITE">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="24.0">
+                                       <image>
+                                          <Image url="@../../../images/transactions@1.5x.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                     </items>
+                  </SplitPane>
+                  <Text layoutX="80.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developpeur Séléctionné" wrappingWidth="218.13674926757812">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <fill>
+                        <RadialGradient centerX="0.9266666412353516" centerY="0.3854961468063238" radius="0.5">
+                           <stops>
+                              <Stop color="#1f95ff" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+                  <Text layoutX="531.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des équipes" wrappingWidth="156.53677368164062">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <fill>
+                        <RadialGradient centerX="0.5133333418104384" centerY="0.3854961468063238" radius="0.5">
+                           <stops>
+                              <Stop color="#ff21a1" />
+                              <Stop color="#ff21a3" offset="0.20479452054794517" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+                  <Pane layoutX="793.0" layoutY="125.0" prefHeight="500.0" prefWidth="662.0">
+                     <children>
+                        <TableView id="tree-table-view" fx:id="tabEquipeSelected" layoutX="5.0" prefHeight="347.0" prefWidth="442.0" style="-fx-opacity: 0.6; -fx-background-color: white;">
+                           <columns>
+                              <TableColumn fx:id="numeroTabEquipeSlelect" prefWidth="102.40002137422562" styleClass="column-header" text="Numéro" />
+                              <TableColumn fx:id="nomTabEquipeSlelect" prefWidth="118.4000244140625" text="Nom" />
+                              <TableColumn fx:id="prenomTabEquipeSlelect" prefWidth="117.60003662109375" text="Prenom" />
+                              <TableColumn fx:id="specialiteTabEquipeSlelect" prefWidth="100.800048828125" text="Specialite" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <Text fx:id="nomEquipe" layoutX="1077.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="156.53677368164062">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <fill>
+                        <RadialGradient centerX="0.5133333418104384" centerY="0.3854961468063238" radius="0.5">
+                           <stops>
+                              <Stop color="#ff21a1" />
+                              <Stop color="#ff21a3" offset="0.20479452054794517" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1206.0" layoutY="17.0">
+                     <image>
+                        <Image url="@../../../images/home-3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

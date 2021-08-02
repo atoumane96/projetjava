@@ -1,0 +1,31 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+body{
+   -fx-background-color: red;
+}
+
+.backAuth{
+    
+    -fx-background-image: url("/images/back.jpg");
+}
+
+.BtnConnect{
+    -fx-background-color:  #64e245;
+    -fx-cursor: hand;
+    -fx-animated: true;
+}
+
+.BtnConnect:hover{
+    -fx-background-color: #0ca129;
+    -fx-cursor: hand;
+    -fx-animated: true;
+}
+
+
+.btnDeconnexion:hover {
+    -fx-background-color: red;
+    -fx-cursor: hand;
+    -fx-animated: true;
+}

@@ -4,6 +4,29 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/gestiondeprojet/GestionDeProjet.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/dev/DevController.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/entities/Developpeur.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/entities/Equipe.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/test/TesteMain.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/imp/TacheImp.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/imp/ChefProImp.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/dev/dev.fxml</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/form/nomEquipe.fxml</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/home/HomeController.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/groupe/groupe.fxml</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/groupe/GroupeController.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/activite/ActiviteController.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/fonctionnalite/Outil.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/auth/AuthentificationController.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/entities/Personne.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/imp/EquipeImp.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/form/nomequipe.css</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/form/NomEquipeController.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/home/home.fxml</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/graphic/activite/activite.fxml</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/imp/DevImp.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/metier/IDeveloppeur.java</file>
+            <file>file:/F:/code%20source/JAVA/gestionDeProjet/src/com/imp/ActivityImp.java</file>
         </group>
     </open-files>
 </project-private>
